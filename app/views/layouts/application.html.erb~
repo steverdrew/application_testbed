@@ -23,9 +23,9 @@
 
   <body>
 
-    <%= render :template => 'layouts/header' %>
+    <%= render 'layouts/header' %>
     <%= yield %>
-    <%= render :template => 'layouts/footer' %>
+    <%= render 'layouts/footer' %>
    
     
     <%= javascript_include_tag "application" %>
