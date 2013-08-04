@@ -12,7 +12,7 @@ class User
   field :provider
   field :uid
   field :name
-
+  field :image
   ## Recoverable
   field :reset_password_token,   :type => String
   field :reset_password_sent_at, :type => Time
@@ -48,7 +48,8 @@ class User
                            provider:auth.provider,
                            uid:auth.uid,
                            email:auth.info.email,
-                           password:Devise.friendly_token[0,20]
+                           password:Devise.friendly_token[0,20],
+                           image:auth.info.image
                            )
     end
     user

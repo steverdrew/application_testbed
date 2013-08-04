@@ -7,6 +7,7 @@ gem 'bson_ext', '~> 1.9.1'
 gem 'devise', '~> 3.0.1'
 gem 'omniauth', '~> 1.1.4'
 gem 'omniauth-facebook', '~> 1.4.1'
+gem 'zurb-foundation', '~> 4.3.1'
 
 group :development, :test do
   gem 'rspec', '~> 2.14.1'
