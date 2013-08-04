@@ -5,6 +5,8 @@ gem 'rails', '4.0.0'
 gem 'mongoid', github: 'mongoid/mongoid' #latest version required for ruby 2.0.0
 gem 'bson_ext', '~> 1.9.1' 
 gem 'devise', '~> 3.0.1'
+gem 'omniauth', '~> 1.1.4'
+gem 'omniauth-facebook', '~> 1.4.1'
 
 group :development, :test do
   gem 'rspec', '~> 2.14.1'
