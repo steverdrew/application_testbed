@@ -51,17 +51,11 @@
 
       <!-- Right Nav Section -->
       <ul class="right">
-		  <li> 
-			  <a href="#" class="button" data-dropdown="contentDrop">Search &raquo;</a>
-        
-			  <div id="contentDrop" class="f-dropdown content medium" data-dropdown-content>
-		             <h4>Title</h4>
-		             <p>Some text that people will think is awesome! Some text that people will think is awesome! Some text that people will think is awesome!</p>
-		             <img src="../img/demos/demo1.jpg">
-		             <p>More test.</p>
-		             <a href="#" class="button">Button</a>
-		           </div> </li>
-
+        <li class="divider"></li>
+        <% if user_signed_in? %>
+		<li><a href="#">Search</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Messages</a></li>
         <li class="divider"></li>
         <li><a href="#">Friends</a></li>
         <li class="divider"></li>
@@ -69,6 +63,10 @@
         <li class="divider"></li>
         <li><a href="#">Logout</a></li>
         <li class="divider"></li>
+		<% else %>
+        <li class="divider"></li>
+        <li><a href="#">Login</a></li>
+		<% end %>
       </ul>
     </section>
   </nav>
