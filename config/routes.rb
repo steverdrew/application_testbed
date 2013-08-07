@@ -1,9 +1,16 @@
 DeviseTest::Application.routes.draw do
+  resources :searches
   resources :feeds
 
-  get "users/show"
+  get 'search', to: 'searches#index'
+
   
+  authenticated :user do
+    root :to => "feeds#index", as: :authenticated_root
+  end
+
   root :to => "home#index"
+
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   resources :users
  

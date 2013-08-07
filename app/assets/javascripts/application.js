@@ -13,8 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.ui.all
+//= require foundation
+$(document).foundation();
 
 $(function() {
-  $( "#datepicker" ).datepicker();
+  $( "#startdate" ).datepicker();
   });
 
+  $(function() {
+    $( "#enddate" ).datepicker();
+    });
