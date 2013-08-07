@@ -19,6 +19,7 @@
   	<%= stylesheet_link_tag    "application" %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
     <%= csrf_meta_tags %>
+
   </head>
 
   <body>
@@ -27,7 +28,8 @@
     <%= yield %>
     <%= render :template => 'layouts/footer' %>
    
-    
+ 
     <%= javascript_include_tag "application" %>
+	
   </body>
 </html>
