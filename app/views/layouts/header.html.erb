@@ -55,6 +55,8 @@
         <li class="divider"></li>
         <li><a href="#">Messages</a></li>
         <li class="divider"></li>
+        <li><a href="#">Bookings</a></li>
+        <li class="divider"></li>
         <li><a href="#">Friends</a></li>
         <li class="divider"></li>
        
@@ -63,6 +65,7 @@
 		<li class="hide-for-small has-dropdown">
 			<%= link_to(image_tag(current_user.image, :size => "30x30",  :alt => current_user.name), edit_user_registration_path) %>
 			 <ul class="dropdown">
+	 		<li><a href="#">Owner Tools</a></li>
 			<li><%= link_to('Logout', destroy_user_session_path, :method=>'delete') %></li>
 		</ul>
 		</li>
@@ -80,8 +83,6 @@
 		<li class="divider"></li>
 	    <li><%= link_to('Sign up', new_user_registration_path)  %></li>
   	  	<li class="divider"></li>
-		<li><%= link_to "fb", user_omniauth_authorize_path(:facebook) %></li>
-        <li class="divider"></li>
         <li><%= link_to('Login', new_user_session_path)  %></li>
 		
 		<% end %>
