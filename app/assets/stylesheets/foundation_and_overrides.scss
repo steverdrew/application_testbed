@@ -138,7 +138,7 @@ $default-float: left;
 //
 
 // $row-width: emCalc(1000);
-// $column-gutter: emCalc(30);
+ $column-gutter: emCalc(20);
 // $total-columns: 12;
 
 //
@@ -148,7 +148,7 @@ $default-float: left;
 // We use this to control the maximum number of block grid elements per row
 
 // $block-grid-elements: 12;
-// $block-grid-default-spacing: emCalc(20);
+//$block-grid-default-spacing: emCalc(20);
 
 // Enables media queries for block-grid classes. Set to false if writing semantic HTML.
 
@@ -196,7 +196,7 @@ $default-float: left;
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: normal;
 // $paragraph-font-size: 1em;
-// $paragraph-line-height: 1.6;
+//$paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: emCalc(20);
 // $paragraph-aside-font-size: emCalc(14);
 // $paragraph-aside-line-height: 1.35;

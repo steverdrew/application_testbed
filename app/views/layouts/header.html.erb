@@ -59,17 +59,21 @@
         <li class="divider"></li>
        
 		<%# <li><img src= <%= current_user.image alt=height="20" width="20"></li> %>
-		<li class="hide-for-small">
+		
+		<li class="hide-for-small has-dropdown">
 			<%= link_to(image_tag(current_user.image, :size => "30x30",  :alt => current_user.name), edit_user_registration_path) %>
+			 <ul class="dropdown">
+			<li><%= link_to('Logout', destroy_user_session_path, :method=>'delete') %></li>
+		</ul>
 		</li>
 
-		<li class="hide-for-medium-up">
+		<li class="hide-for-medium-up has-dropdown">
 			<%= link_to( current_user.name, edit_user_registration_path) %> 
 		</li>
 
 		
         <li class="divider"></li>
-        <li><%= link_to('Logout', destroy_user_session_path, :method=>'delete') %></li>
+      
         <li class="divider"></li>
 		<% else %>
         
