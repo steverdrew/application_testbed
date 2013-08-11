@@ -16,10 +16,20 @@
 //= require foundation
 $(document).foundation();
 
+wrapSelects = function() {
+  $('form.awesome select:not(.is-wrapped)')
+    .addClass('is-wrapped')
+    .wrap('<div class="custom dropdown select" />')
+    .after('<span class="selector"></span>');
+}
+
+$(wrapSelects);
+
 $(function() {
   $( "#startdate" ).datepicker();
   });
+  
+$(function() {
+  $( "#enddate" ).datepicker();
+  });
 
-  $(function() {
-    $( "#enddate" ).datepicker();
-    });

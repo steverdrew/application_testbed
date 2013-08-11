@@ -1,43 +1,71 @@
-<div class="row" style="height:100%; width:100%;">
-	 <div class="large-8 columns panel"
-		<form>
+<form class="custom">
+	<div class="row">
+		<div class="large-6 columns">
 			<div class="row">
       			<div class="large-12 columns">
-					<label><h4>Start typing a location or select a region</h4></label>
+					<label><h4>Start typing a location</h4></label>
         			<input type="text"/>
 	  			</div>
 			</div>
-  			<div class="row">
-				<div class="row collapse">
-			        <div class="small-1 columns">
-			        	<span class="prefix radius">Start</span>
-			        </div>
-				    <div class="small-2 columns">
-				    	<input type="text" id="startdate" placeholder="Value">
-				    </div>
- 			        <div class="small-1 columns">
- 			        	<span class="prefix radius">Start</span>
- 			        </div>
- 				    <div class="small-2 columns">
-						<input type="text" id="startdate" placeholder="Value">
- 				    </div>
- 			        <div class="small-1 columns">
- 			        	<span class="prefix radius">Start</span>
- 			        </div>
- 				    <div class="small-2 columns">
-						<input type="text" id="startdate" placeholder="Value">
- 				    </div>
- 			        <div class="small-1 columns">
- 			        	<span class="prefix radius">Start</span>
- 			        </div>
- 				    <div class="small-2 columns">
-						<input type="text" id="startdate" placeholder="Value">
- 				    </div>
-				 </div>     
+			<div class="row collapse">
+				<div class="large-6 columns">
+	          	  <select>
+	            	  <option>Holiday Type</option>
+	            	  <option>Ski</option>
+	            	  <option>Escape</option>
+	          		</select>
+	        	</div>
+				<div class="large-6 columns">
+	          	  <select>
+	            	  <option>Property Type</option>
+	            	  <option>Villa/Cottage</option>
+	            	  <option>Apartment</option>
+	          		</select>
+	        	</div>
+			</div>
+			<div class="row collapse">
+      			<div class="large-6 columns">
+					<div class="row collapse">
+      					<div class="small-6 columns">
+			    			<span class="prefix radius">Start Date</span>
+			    		</div>
+						<div class="small-6 columns">
+							<input type="text" id="startdate" placeholder="Value">
+						</div>
+					</div>
+		  			<div class="row collapse">
+      					<div class="small-6 columns">
+			    			<span class="prefix radius">End Date</span>
+			    		</div>
+						<div class="small-6 columns">
+							<input type="text" id="enddate" placeholder="Value">
+						</div>
+					</div>
+		  			<div class="row collapse">
+      					<div class="small-6 columns">
+			    			<span class="prefix radius">Min Rooms</span>
+			    		</div>
+						<div class="small-6 columns">
+							<input type="text" placeholder="Value">
+						</div>
+					</div>
+		  			<div class="row collapse">
+      					<div class="small-6 columns">
+			    			<span class="prefix radius">Max Rooms</span>
+			    		</div>
+						<div class="small-6 columns">
+							<input type="text" placeholder="Value">
+						</div>
+					</div>
+				</div>
+      			<div class="large-6 columns">
+		  			Stuff can go here too...
+				</div>
 			</div>
 		</form>
 	</div>
-	<div class="large-4 columns" style="height:180px; width:300px;">
-	<div id="map-canvas"/>
+	<div class="large-6 columns" style="height:400px; width:400px;">
+		<div id="map-canvas"/>
 	</div>
-</div>
+	
+
