@@ -15,8 +15,11 @@
 //= require jquery.ui.all
 //= require foundation
 //= require responsive-tables
-
+$(document).foundation('orbit', {
+    timer_speed: 0
+});
 $(document).foundation();
+
 
 $(function() {
   $( "#startdate" ).datepicker();
