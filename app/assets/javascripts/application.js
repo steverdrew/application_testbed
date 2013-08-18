@@ -15,9 +15,13 @@
 //= require jquery.ui.all
 //= require foundation
 //= require responsive-tables
-$(document).foundation('orbit', {
-    timer_speed: 0
+//= require twitter/typeahead                                                                                           
+//= require twitter/typeahead.min        
+
+$(document).ready(function() {
+  $('.typeahead').typeahead( {name: 'planets', local: [ "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune" ] });
 });
+
 $(document).foundation();
 
 

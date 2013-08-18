@@ -10,7 +10,8 @@ gem 'omniauth-facebook', '~> 1.4.1'
 gem 'zurb-foundation', '~> 4.3.1'
 gem 'jquery-rails', '~> 3.0.4'
 gem 'jquery-ui-rails', '~> 4.0.4'
-gem "font-awesome-rails"
+gem 'font-awesome-rails', '~> 3.2.1.3'
+gem 'twitter-typeahead-rails', '~> 0.9.2'
 
 group :development, :test do
   gem 'rspec', '~> 2.14.1'
