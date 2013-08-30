@@ -1,11 +1,12 @@
 DeviseTest::Application.routes.draw do
+  resources :properties
   resources :messages
-
   resources :searches
   resources :feeds
 
   get 'search', to: 'searches#index'
   get 'messages', to: 'messages#index'
+  get 'property', to: 'properties#show'
 
   
   authenticated :user do

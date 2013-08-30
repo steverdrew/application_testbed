@@ -160,7 +160,8 @@ $default-float: left;
 
 // Control header font styles
 
-// $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+//$header-font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+
 // $header-font-weight: bold;
 // $header-font-style: normal;
 // $header-font-color: #222;
@@ -171,12 +172,12 @@ $default-float: left;
 
 // Control header font sizes
 
-// $h1-font-size: emCalc(44);
-// $h2-font-size: emCalc(37);
-// $h3-font-size: emCalc(27);
-// $h4-font-size: emCalc(23);
-// $h5-font-size: emCalc(18);
-// $h6-font-size: 1em;
+//$h1-font-size: emCalc(45);
+//$h2-font-size: emCalc(35);
+//$h3-font-size: emCalc(25);
+//$h4-font-size: emCalc(20);
+//$h5-font-size: emCalc(15);
+//$h6-font-size: 1em;
 
 // Control how subheaders are styled.
 
@@ -193,10 +194,10 @@ $default-float: left;
 
 // Style paragraphs
 
-// $paragraph-font-family: inherit;
+// $paragraph-font-family: 'Arvo', Georgia, Times, serif;
 // $paragraph-font-weight: normal;
-// $paragraph-font-size: 1em;
-//$paragraph-line-height: 1.6;
+// $paragraph-font-size: 0.8em;
+// $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: emCalc(20);
 // $paragraph-aside-font-size: emCalc(14);
 // $paragraph-aside-line-height: 1.35;
@@ -224,6 +225,7 @@ $default-float: left;
 
 // Style lists
 
+//$list-font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
 // $list-style-position: outside;
 // $list-side-margin: 0;
 // $list-nested-margin: emCalc(20);

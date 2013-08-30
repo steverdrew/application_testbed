@@ -4,7 +4,8 @@
 <!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
-
+<script src='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.js'></script>
+<link href='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.css' rel='stylesheet' />
   <head>
   	<meta charset="utf-8" />
 
@@ -19,17 +20,10 @@
   	<%= stylesheet_link_tag    "application" %>
 	<%= javascript_include_tag "vendor/custom.modernizr" %>
     <%= csrf_meta_tags %>
-    
-	<script type="text/javascript" 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDTcenPL5d2VUpdDqcZZ0Cj6JXKss_3Z0&		sensor=true">
-	</script>
-    
-	<script>
-	function myFunction()
-	{
-	alert("Hello World!");
-	}
-	</script>
-	
+	<style>
+		body { margin:0; padding:0; }
+	    #map { position:absolute; top:0; bottom:0; width:100%; }
+	</style>
   </head>
 
   <body>

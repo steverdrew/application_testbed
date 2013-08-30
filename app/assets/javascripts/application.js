@@ -12,12 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery.ui.all
+//= require jquery.ui.datepicker
 //= require foundation
 //= require responsive-tables
 //= require twitter/typeahead                                                                                           
-//= require twitter/typeahead.min        
-//= require gmaps
+//= require twitter/typeahead.min
 
 $(document).ready(function() {
   $('.typeahead').typeahead( {name: 'planets', local: [ "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune" ] });
@@ -33,7 +32,6 @@ $(function() {
 $(function() {
   $( "#enddate" ).datepicker();
   });
-  
-  
+
 
   

@@ -12,8 +12,9 @@
  *= require foundation_and_overrides
  *= require font-awesome
  *= require_tree .
- */
 
+ */
+ 
 .typeahead,
 .tt-query,
 .tt-hint {
@@ -28,3 +29,4 @@
           border-radius: 8px;
   outline: none;
 }
+
