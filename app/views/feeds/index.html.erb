@@ -1,19 +1,25 @@
   
   <!-- Main Grid Section -->
   <div class="row">
-    <div class="large-6 columns border-radius">
+    
+	<div class="large-6 columns border">
         <div class="row">
-		    <div class="large-3 columns">
-				<a href="#"><%= image_tag "pic1.jpg" %></a>
+			<div class="large-2 columns">
+				<a href="#"><%= image_tag(current_user.image) %></a>
     		</div>	
-		    <div class="large-9 columns">
+		    <div class="large-10 columns">
 				<h5><a href="#">Paul</a> has just rated his stay at <a href="#">Villa Casa</a></h5>
 	            <p>This place was amazing, the views were exceptional and the place itself was great value for money... <a href="#">Read more</a></p>
-				<a href="#"><%= image_tag "pic1.jpg" %></a>
-    		</div>	
+			</div>	
 		</div>
-	  </div>
-    <div class="large-2 columns">
+		<div class="row">
+			<div class="large-12 columns cropped-image">
+				<a href="#"><%= image_tag "pic1.jpg" %></a>
+    		</div>
+		</div>
+	</div>
+    
+	<div class="large-2 columns">
       <div class="panel">
         <h3>Get in!</h3>
         <p>Mary just booked <a href="#">Finca Fina</a></p>

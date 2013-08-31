@@ -33,5 +33,22 @@ $(function() {
   $( "#enddate" ).datepicker();
   });
 
+  function scrollToAnchor(aid){
+      var aTag = $("a[name='"+ aid +"']");
+      $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+  }
 
+  $("#top_link").click(function() {
+     scrollToAnchor('top');
+  });
+  
+  $("#owner_link").click(function() {
+     scrollToAnchor('owner');
+  });
+  
+  $("#benefits_link").click(function() {
+     scrollToAnchor('benefits');
+  });
+  
+  
   
