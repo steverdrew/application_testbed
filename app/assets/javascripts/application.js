@@ -15,12 +15,10 @@
 //= require jquery.ui.datepicker
 //= require foundation
 //= require responsive-tables
-//= require twitter/typeahead                                                                                           
-//= require twitter/typeahead.min
+//= require chosen.jquery
 
-$(document).ready(function() {
-  $('.typeahead').typeahead( {name: 'planets', local: [ "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune" ] });
-});
+
+
 
 $(document).foundation();
 
@@ -37,18 +35,10 @@ $(function() {
       var aTag = $("a[name='"+ aid +"']");
       $('html,body').animate({scrollTop: aTag.offset().top},'slow');
   }
-
-  $("#top_link").click(function() {
-     scrollToAnchor('top');
-  });
   
   $("#owner_link").click(function() {
      scrollToAnchor('owner');
   });
-  
-  $("#benefits_link").click(function() {
-     scrollToAnchor('benefits');
-  });
-  
-  
-  
+
+$(".chosen-select").chosen()
+   

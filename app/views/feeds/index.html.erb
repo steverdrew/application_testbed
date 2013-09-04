@@ -1,117 +1,14 @@
-  
-  <!-- Main Grid Section -->
-  <div class="row">
-    
-	<div class="large-6 columns border">
-        <div class="row">
-			<div class="large-2 columns">
-				<a href="#"><%= image_tag(current_user.image) %></a>
-    		</div>	
-		    <div class="large-10 columns">
-				<h5><a href="#">Paul</a> has just rated his stay at <a href="#">Villa Casa</a></h5>
-	            <p>This place was amazing, the views were exceptional and the place itself was great value for money... <a href="#">Read more</a></p>
-			</div>	
-		</div>
-		<div class="row">
-			<div class="large-12 columns cropped-image">
-				<a href="#"><%= image_tag "pic1.jpg" %></a>
-    		</div>
-		</div>
-	</div>
-    
-	<div class="large-2 columns">
-      <div class="panel">
-        <h3>Get in!</h3>
-        <p>Mary just booked <a href="#">Finca Fina</a></p>
-      </div>
-    </div>
-    
-    <div class="large-4 columns">
-        <table>
-		  <tr>
-			<td width="25%">
-				<a href="#"><%= image_tag "pic1.jpg" %></a>
-			</td>	  
-			<td>
-			<h6>A new review has been added for <a href="#">Casa Mia</a></h6>
-            <p>This place was the pits... <a href="#">Read more</a></p>
-			</td>
-		  </tr>
-	    </table>
-    </div>
-  </div>
 
-  <div class="row">
 
-      <div class="large-2 columns">
-        <div class="panel">
-          <h5>Get in!</h5>
-          <p>Mary just booked <a href="#">Finca Fina</a></p>
-        </div>
-      </div>
-    
-    <div class="large-4  columns">
-        <table>
-		  <tr>
-			<td width="25%">
-				<a href="#"><%= image_tag "pic1.jpg" %></a>
-			</td>	  
-			<td>
-			<h6>A new review has been added for <a href="#">Casa Mia</a></h6>
-            <p>This place was the pits... <a href="#">Read more</a></p>
-			</td>
-		  </tr>
-	    </table>
-    </div>
-    <div class="large-6 columns">
-        <table>
-		  <tr>
-			<td width="25%">
-				<a href="#"><%= image_tag "pic1.jpg" %></a>
-			</td>	  
-			<td>
-			<h6><a href="#">Paul</a> has just rated his stay at <a href="#">Villa Casa</a></h6>
-            <p>This place was amazing, the views were exceptional and the place itself was great value for money... <a href="#">Read more</a></p>
-			</td>
-		  </tr>
-	    </table>
-	  </div>
-  </div>
-
-  <div class="row">
-      <div class="large-4  columns">
-          <table>
-  		  <tr>
-  			<td width="25%">
-				<a href="#"><%= image_tag "pic1.jpg" %></a>
-  			</td>	  
-  			<td>
-  			<h6>A new review has been added for <a href="#">Casa Mia</a></h6>
-              <p>This place was the pits... <a href="#">Read more</a></p>
-  			</td>
-  		  </tr>
-  	    </table>
-      </div>
-	  
-    <div class="large-6 columns">
-        <table>
-		  <tr>
-			<td width="25%">
-				<a href="#"><%= image_tag "pic1.jpg" %></a>
-			</td>	  
-			<td>
-			<h6><a href="#">Paul</a> has just rated his stay at <a href="#">Villa Casa</a></h6>
-            <p>This place was amazing, the views were exceptional and the place itself was great value for money... <a href="#">Read more</a></p>
-			</td>
-		  </tr>
-	    </table>
-	  </div>
-	  
-      <div class="large-2 columns">
-        <div class="panel">
-          <h5>Nice one!</h5>
-          <p>New info available for <a href="#">Finca Fina</a></p>
-        </div>
-      </div>
-  </div>
-  
+<div class="row">    
+	<%= render partial: "large_feed" %>
+	<%= render partial: "med_feed" %>
+	<%= render partial: "small_feed" %>
+</div>
+<div class="row">    	
+	<%= render partial: "large_feed" %>
+	<%= render partial: "med_feed" %>
+	<%= render partial: "small_feed" %>
+</div>
+chrome.css
+reset.css

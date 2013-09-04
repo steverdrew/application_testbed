@@ -11,12 +11,12 @@
  *= require_self
  *= require foundation_and_overrides
  *= require font-awesome
- *= require_tree .
-
+ *= require chosen
+ 
  */
  
-.cropped-image { width: 500px; height: 10px; overflow: hidden; }
+.cropped-image { width: 500px; height: 300px; overflow: hidden; }
 .cropped-image img { width: 500px; }
-div.border { padding: 10px; border: 1px solid #eee }
+div.border { margin: 1px; padding: 10px; border: 2px solid #eee }
 
 
