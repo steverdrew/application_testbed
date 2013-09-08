@@ -60,3 +60,12 @@ $(document).ready(function(){
     });
   });
 });
+	
+$("#results").click(function(){
+    $("#search_section").hide('slow');
+    $("#results_section").show('slow');
+})
+$("#search").click(function(){
+    $("#search_section").show('slow');
+    $("#results_section").hide('slow');
+})

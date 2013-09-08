@@ -1,25 +1,99 @@
-<h1>Listing properties</h1>
+<div class="row">
+	<div class="large-12 columns">
+	</div>
+	<div class="large-12 columns">
+		<dl class="sub-nav">
+			<dt>Sort by:</dt>
+			<dd class="active"><a href="#">Price</a></dd>
+		    <dd><a href="#">Rating</a></dd>
+		 </dl>
+	</div>
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+<div class="row">
+	<div class="large-4 columns">
+  		<div class="panel">
+			<%= render partial: "property1" %>
+		</div>
+	</div>
+	<div class="large-4 columns">
+  		<div class="panel">
+			<%= render partial: "property2" %>
+		</div>
+	</div>
+	<div class="large-4 columns">
+  		<div class="panel">
+			<%= render partial: "property2" %>
+		</div>
+	</div>	
+</div>
+<div class="row">
+	<div class="large-4 columns">
+  		<div class="panel">
+			<%= render partial: "property1" %>
+		</div>
+	</div>
+	<div class="large-4 columns">
+  		<div class="panel">
+			<%= render partial: "property2" %>
+		</div>
+	</div>
+	<div class="large-4 columns">
+  		<div class="panel">
+			<%= render partial: "property2" %>
+		</div>
+	</div>	
+</div>
+<div class="row">
+	<div class="large-4 columns">
+  		<div class="panel">
+			<%= render partial: "property1" %>
+		</div>
+	</div>
+	<div class="large-4 columns">
+  		<div class="panel">
+			<%= render partial: "property2" %>
+		</div>
+	</div>
+	<div class="large-4 columns">
+  		<div class="panel">
+			<%= render partial: "property2" %>
+		</div>
+	</div>	
+</div>
+<div class="row">
+	<div class="large-4 columns">
+  		<div class="panel">
+			<%= render partial: "property1" %>
+		</div>
+	</div>
+	<div class="large-4 columns">
+  		<div class="panel">
+			<%= render partial: "property2" %>
+		</div>
+	</div>
+	<div class="large-4 columns">
+  		<div class="panel">
+			<%= render partial: "property2" %>
+		</div>
+	</div>	
+</div>
+<div class="row">
+	<div class="large-4 columns">
+  		<div class="panel">
+			<%= render partial: "property1" %>
+		</div>
+	</div>
+	<div class="large-4 columns">
+  		<div class="panel">
+			<%= render partial: "property2" %>
+		</div>
+	</div>
+	<div class="large-4 columns">
+  		<div class="panel">
+			<%= render partial: "property2" %>
+		</div>
+	</div>	
+</div>
 
-  <tbody>
-    <% @properties.each do |property| %>
-      <tr>
-        <td><%= link_to 'Show', property %></td>
-        <td><%= link_to 'Edit', edit_property_path(property) %></td>
-        <td><%= link_to 'Destroy', property, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
-<br>
-
-<%= link_to 'New Property', new_property_path %>
