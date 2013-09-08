@@ -1,74 +1,131 @@
 <div id="preloader">
 	<div id="status">&nbsp;</div>
 </div>
-<form class="">
-	<div class="row">
-		<div class="large-12 columns">
-			<label><h2>Start typing a location</h2></label>
-			<input type="text"/>
-		</div>
+
+<div class="row">	
+	<div class="small-1 columns">
+		<h3><i class="icon-map-marker"></i></h3>
 	</div>
-	<div class="row">
-		<div class="large-6 columns">
-  	  		<select data-placeholder="Choose" id="e2" style="width:100%" >
-    	 		<option></option>
-				<option>Villa/Cottage</option>
-    	  		<option>Apartment</option>
-    	 		<option>Villa/Cottage1</option>
-    	  		<option>Apartment1</option>
-    	 		<option>Villa/Cottage2</option>
-    	  		<option>Apartment2</option>
-    	 		<option>Villa/Cottage3</option>
-    	  		<option>Apartment3</option>
+	<div class="small-11 columns">
+		<select data-placeholder="Select location(s)" id="e1" multiple style="width:98%">
+			<option></option>
+			<option>United Kingdom</option>
+			<option>France</option>
+			<option>Spain</option>
+			<option>Italy</option>    	  		
+		</select>
+	</div>		
+</div>
+<div class="row">
+	<div class="small-1 columns">
+		<h3><i class="icon-key"></i></h3>
+	</div>
+	<div class="small-11 columns">
+		<select data-placeholder="Choose no. of rooms" id="e2" multiple style="width:98%">
+			<option></option>
+			<option>1 Bed</option>
+			<option>2 Bed</option>
+			<option>3 Bed</option>
+			<option>4 Bed</option>
+			<option>5 Bed +</option>	
 			</select>
-		</div>
-		<div class="large-6 columns">
-  	  		<select data-placeholder="Choose a Property Type..." class="chosen-select">
-    	 		<option>Villa/Cottage</option>
-    	  		<option>Apartment</option>
-    	 		<option>Villa/Cottage1</option>
-    	  		<option>Apartment1</option>
-    	 		<option>Villa/Cottage2</option>
-    	  		<option>Apartment2</option>
-    	 		<option>Villa/Cottage3</option>
-    	  		<option>Apartment3</option>
-			</select>
-		</div>
+	</div>		
+</div>	
+<div class="row">
+	<div class="small-1 columns">
+		<h3><i class="icon-home"></i></h3>
 	</div>
-	<div class="row collapse">
-		<div class="small-3 columns">
-			<span class="prefix radius">Start Date</span>
-		</div>
-		<div class="small-3 columns">
-			<input type="text" id="startdate" placeholder="Value">
-		</div>
-		<div class="small-3 columns">
-			<span class="prefix radius">End Date</span>
-		</div>
-		<div class="small-3 columns">
-			<input type="text" id="enddate" placeholder="Value">
-		</div>
+	<div class="small-11 columns">
+		<select data-placeholder="Choose type of property" id="e3" multiple style="width:98%" >
+	 		<option></option>
+			<option>Villa</option>
+			<option>Gite</option>
+			<option>Cottage</option>
+			<option>Castle</option>
+			<option>Garden Shed</option>	
+		</select>
+	</div>	
+			
+</div>	
+<div class="row">			
+	<div class="small-1 columns">
+		<h3><i class="icon-group"></i></h3>
 	</div>
-	<div class="row collapse">
-		<div class="small-3 columns">
-			<span class="prefix radius">Min Rating</span>
-		</div>
-		<div class="small-3 columns">
-			<input type="text" placeholder="Value">
-		</div>
-		<div class="small-3 columns">
-			<span class="prefix radius">Max Rating</span>
-		</div>
-		<div class="small-3 columns">
-			<input type="text" placeholder="Value">
-		</div>
+	<div class="small-11 columns">
+		<select data-placeholder="Choose suitability" id="e4" multiple style="width:98%" >
+			<option></option>
+			<option>Great for Kids</option>
+			<option>Best for Elderly/Infirm </option>
+			<option>Pet Friendly</option>
+			<option>No Car</option>
+			<option>Wheelchair Friendly</option>	
+		</select>
+	</div>	
+</div>
+<div class="row">			
+	<div class="small-1 columns">
+		<h3><i class="icon-picture"></i></h3>
 	</div>
-	
-	<div class="row">
-		<div class="large-12 columns">
-			<hr>
-			<a href="#" class="button small right">Display Results</a>
-		</div>
+	<div class="small-11 columns">
+		<select data-placeholder="Holiday type" id="e5" multiple style="width:98%" >
+			<option></option>
+			<option>Beach</option>
+			<option>Ski</option>
+			<option>City break</option>
+			<option>Golf</option>
+			<option>Lakeside</option>
+			<option>Rural</option>	
+		</select>
+	</div>	
+</div>
+<div class="row">			
+	<div class="small-1 columns">
+		<h3><i class="icon-ok-sign"></i></h3>
 	</div>
-</form>
+	<div class="small-11 columns">
+		<select data-placeholder="Facilities" id="e6" multiple style="width:98%" >
+			<option></option>
+			<option>Beach</option>
+			<option>Ski</option>
+			<option>City break</option>
+			<option>Golf</option>
+			<option>Lakeside</option>
+			<option>Rural</option>	
+		</select>
+	</div>	
+</div>
+<div class="row">
+	<div class="large-7 columns">
+		<input type="checkbox">
+		<label>Places my friends have stayed</label>
+	</div>
+	<div class="large-5 columns">
+		<input type="checkbox">
+		<label>Top rated only</label>
+	</div>
+</div>
+<div class="row collapse" style="margin-top:10px;">
+	<div class="small-3 columns">
+		<span class="prefix radius">Start Date</span>
+	</div>
+	<div class="small-3 columns">
+		<input type="text" id="startdate" placeholder="Value">
+	</div>
+	<div class="small-3 columns">
+		<span class="prefix radius">End Date</span>
+	</div>
+	<div class="small-3 columns">
+		<input type="text" id="enddate" placeholder="Value">
+	</div>
+</div>
+<div class="row">
+	<div class="large-12 columns">
+		<hr>
+		<a href="#" class="button small right">Display Results</a>
+	</div>
+</div>
+
+
+
+
 

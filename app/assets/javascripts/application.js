@@ -16,8 +16,8 @@
 //= require foundation
 //= require responsive-tables
 //= require select2
-
-
+//= require select2-boxes
+//= require jquery.icheck
 
 
 $(document).foundation();
@@ -46,12 +46,17 @@ $(window).load(function() { // makes sure the whole site is loaded
 	$("#preloader").delay(350).fadeOut("slow"); // will fade out the white DIV that covers the website.
 })
 
-$(document).ready(function() {
-            $("#e2").select2({
-				placeholder: 'placeholder',
-                allowClear: true
-            });
-	
-
+// customize all inputs (will search for checkboxes and radio buttons)
+$(document).ready(function(){
+  $('input').each(function(){
+    var self = $(this),
+      label = self.next(),
+      label_text = label.text();
+	label.remove();
+    self.iCheck({
+      checkboxClass: 'icheckbox_line-blue',
+      radioClass: 'iradio_line-blue',
+      insert: '<div class="icheck_line-icon"></div>' + label_text
+    });
+  });
 });
-
