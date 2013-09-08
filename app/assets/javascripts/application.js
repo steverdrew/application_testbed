@@ -15,7 +15,7 @@
 //= require jquery.ui.datepicker
 //= require foundation
 //= require responsive-tables
-//= require chosen.jquery
+//= require select2
 
 
 
@@ -40,9 +40,18 @@ $(function() {
      scrollToAnchor('owner');
   });
 
-$(".chosen-select").chosen();
 
 $(window).load(function() { // makes sure the whole site is loaded
 	$("#status").fadeOut(); // will first fade out the loading animation
 	$("#preloader").delay(350).fadeOut("slow"); // will fade out the white DIV that covers the website.
 })
+
+$(document).ready(function() {
+            $("#e2").select2({
+				placeholder: 'placeholder',
+                allowClear: true
+            });
+	
+
+});
+
