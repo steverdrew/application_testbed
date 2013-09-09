@@ -22,9 +22,30 @@
 		</div>
 	</div>
 </div>
-<div class="row" id="results_section" style="display:none;">
+<div class="row" id="results_section" style="">
 	<div class="large-12 columns">
-		<a id="search" class="button small">Back to Search</a>
+		<%# <a id="search" class="button small">Back to Search</a>%>
 		<%= render template: "properties/index" %>
 	</div>
 </div>
+
+<script>
+alert('test');
+
+$("#results").click(function(){
+    $("#search_section").fadeOut('slow', function() {
+      });
+    $("#results_section").fadeIn('slow', function() {
+        // Animation complete
+      });
+	  
+})
+$("#search").click(function(){
+    $("#search_section").fadeIn('slow', function() {
+        // Animation complete
+      });
+    $("#results_section").fadeOut('slow', function() {
+        // Animation complete
+      });
+})
+</script>
