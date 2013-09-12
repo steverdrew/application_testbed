@@ -12,12 +12,15 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery.ui.datepicker
+//= require zepto
 //= require foundation
+
 //= require responsive-tables
+//= require jquery.ui.datepicker
 //= require select2
 //= require select2-boxes
 //= require jquery.icheck
+
 
 
 $(document).foundation();
