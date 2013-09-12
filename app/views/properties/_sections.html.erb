@@ -1,21 +1,21 @@
 <div class="section-container tabs" data-section="tabs">
   <section>
-    <p class="title" data-section-title><a href="#"><i class="icon-play-sign"></i> Pictures & Video</a></p>
+    <p class="title" data-section-title><a href="#"><i class="icon-play-sign"></i> Pics & Vids (15)</a></p>
     <div class="content" data-section-content>
 	  <ul class="clearing-thumbs" data-clearing>
-	    <li><a href="<%=asset_path('pic1.jpg')%>" class="th radius"><%= image_tag(asset_path('pic1.jpg'), size: "100x100")%></a></li>
 	    <li><a href="<%=asset_path('pic1.jpg')%>" class="th radius"> <%=image_tag(asset_path('pic1.jpg'), size: "100x100")%></a></li>
 	    <li><a href="<%=asset_path('pic1.jpg')%>" class="th radius"><%= image_tag(asset_path('pic1.jpg'), size: "100x100")%></a></li>
 	    <li><a href="<%=asset_path('pic1.jpg')%>" class="th radius"><%= image_tag(asset_path('pic1.jpg'), size: "100x100")%></a></li>
 	    <li><a href="<%=asset_path('pic1.jpg')%>" class="th radius"> <%=image_tag(asset_path('pic1.jpg'), size: "100x100")%></a></li>
 	    <li><a href="<%=asset_path('pic1.jpg')%>" class="th radius"><%= image_tag(asset_path('pic1.jpg'), size: "100x100")%></a></li>
+		<li><a href="<%=asset_path('pic1.jpg')%>" class="th radius"><%= image_tag(asset_path('cottage.jpg'), size: "100x100")%></a></li>
 	  </ul>
     </div>
   </section>
   <section>
-    <p class="title" data-section-title><a href="#"><i class="icon-money"></i> Facilities</a></p>
+    <p class="title" data-section-title><a href="#"<i class="icon-home"></i> About Casa Mia</a></p>
     <div class="content" data-section-content>
-      <p>Content of section 2.</p>
+		<%= render 'attributes' %>
     </div>
   </section>
   <section>
@@ -24,11 +24,10 @@
 		<div class="row">
 			<div class="large-12 columns" style="width:500px; height:200px">
 				<div id='map'  ></div>
-						<script type='text/javascript'>
+					<%#	<script type='text/javascript'>
 						var map = L.mapbox.map('map', 'examples.map-uci7ul8p')
 						    .setView([40, -100.100], 4);
-						</script>
-				
+						</script> %>		
 			</div>
 		</div>
     </div>
@@ -40,9 +39,42 @@
     </div>
   </section>
   <section>
-    <p class="title" data-section-title><a href="#"><i class="icon-beer"></i> Local Knowledge</a></p>
+    <p class="title" data-section-title><a href="#"><i class="icon-beer"></i> Local Knowledge (2)</a></p>
     <div class="content" data-section-content>
-      <p>Content of section 2.</p>
-    </div>
+		<div class="row">
+			<div class="small-2 columns">
+				<a href="#"><%= image_tag((current_user.image), size: "45x45" )%></a>
+			</div>	
+			<div class="small-8 columns">
+				<p>Brilliant fish place round the corner.</p>
+			</div>	
+			<div class="small-2 columns">
+				<a href="#">Report</a>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="small-2 columns">
+				<a href="#"><%= image_tag((current_user.image), size: "45x45" )%></a>
+			</div>	
+			<div class="small-8 columns">
+				<p>The indian is even better fella. (add added col)</p>
+			</div>	
+			<div class="small-2 columns">
+				<a href="#">Report</a>
+			</div>	
+		</div>
+		
+		<div class="row">
+			<div class="large-12 columns">
+				<hr/>
+			</div>
+		</div>
+		<div class="row">
+			<div class="large-12 columns">
+				<p>Add your local knowledge and win kudos. Yeh!</p>
+				<a href="#" class="button small radius">Submit</a>
+			</div>
+		</div>
+	</div>
   </section>
 </div>

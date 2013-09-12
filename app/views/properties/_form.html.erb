@@ -1,3 +1,7 @@
+<div id="preloader">
+	<div id="status">&nbsp;</div>
+</div>
+
 <%= form_for(@property) do |f| %>
   <% if @property.errors.any? %>
     <div id="error_explanation">
@@ -20,8 +24,8 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="large-8 columns">
-				<a href="#" data-reveal-id="myModal">
+			<div class="large-12 columns">
+				<a href="#" data-reveal-id="reviews">
 					<i class="icon-star"></i>
 					<i class="icon-star"></i>
 					<i class="icon-star"></i>
@@ -29,20 +33,17 @@
 					 (10 reviews)
 				</a>
 			</div>
-			<div class="large-4 columns" align="right">
-				<a href="#">
-					<i class="icon-thumbs-up"></i>
-					<i class="icon-thumbs-down"></i>
-				</a>
+		</div>
+		<div class="row">
+			<div class="large-12 columns" style="padding-top:10px;">
+		  	  <ul class="clearing-thumbs featured" data-clearing>
+		  	    <li><a href="<%=asset_path('pic1.jpg')%>" class="th radius"><%= image_tag(asset_path('cottage.jpg'),)%></a></li>
+				<ul>
 			</div>
 		</div>
 		<div class="row">
 			<div class="large-12 columns" style="padding-top:10px;">
-				<%= image_tag(asset_path('cottage.jpg'))%>
-			</div>
-		</div>
-		<div class="row">
-			<div class="large-12 columns" style="padding-top:10px;">
+				<p class="subheader">Friends who have stayed here</p>
 				<a href="#"><%= image_tag((current_user.image), size: "45x45" )%></a>
 			</div>
 		</div>	  	
@@ -51,13 +52,12 @@
 	<div class="large-8 columns">
 		<div class="row">
 			<div class="large-10 columns">
-				<h4 class="subheader">A stunning 5 bed villa with all the mod cons</h4>
+				<h4 class="subheader" align="">A stunning 5 bed villa with all the mod cons and some really stunning views.</h4>
 			</div>
 			<div class="large-2 columns" align="right">
-				<a href="#" class="button">Enquire</a>
+				<a href="#"  data-reveal-id="enquire" class="button">Enquire</a>
 			</div>
 		</div>
-
 		<div class="row">
 	  		<div class="large-12 columns">
 	  			<%= render 'sections' %>
@@ -65,13 +65,43 @@
 		</div>
 	</div>	
 </div>
-  
-<div id="myModal" class="reveal-modal">
-  <h2>Awesome. I have it.</h2>
+<div class="row">
+	<div class="large-12 columns">
+		<hr/>
+	</div>
+</div>
+<div class="row">
+	<div class="large-12 columns">
+		<h4>Similar Properties</h4>
+		<p class="subheader">We've picked out some other great properties that you might like</p>
+	</div>
+</div>
+<div class="row">
+	<div class="large-3 columns">
+		<%= render 'property1' %>
+	</div>
+	<div class="large-3 columns">
+		<%= render 'property1' %>
+	</div>
+	<div class="large-3 columns">
+	</div>
+	<div class="large-3 columns">
+	</div>
+</div>
+
+<div id="reviews" class="reveal-modal">
+  <h2>Reviews</h2>
   <p class="lead">Your couch.  It is mine.</p>
   <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
   <a class="close-reveal-modal">&#215;</a>
 </div>
+<div id="enquire" class="reveal-modal">
+  <h2>Enquire</h2>
+  <p class="lead">Your couch.  It is mine.</p>
+  <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
 <%#
   <div class="actions">
     <%= f.submit'Submit', :class => 'button' %>
