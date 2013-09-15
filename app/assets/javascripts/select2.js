@@ -1972,7 +1972,7 @@ the specific language governing permissions and limitations under the Apache Lic
 
                 if (e.which == KEY.DELETE || e.which == KEY.BACKSPACE) {
                     if (this.opts.allowClear) {
-				        this.clear();
+                        this.clear();
                     }
                     killEvent(e);
                     return;

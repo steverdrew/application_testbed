@@ -8,7 +8,6 @@ $(document).ready(function() {
 $(document).ready(function() {
             $("#e2").select2({
 				placeholder: 'placeholder',
-                allowClear: true
             });	
 });
 $(document).ready(function() {
@@ -29,6 +28,7 @@ $(document).ready(function() {
                 allowClear: true
             });	
 });
+
 $(document).ready(function() {
             $("#e6").select2({
 				placeholder: 'placeholder',

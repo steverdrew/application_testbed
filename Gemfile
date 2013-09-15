@@ -13,6 +13,7 @@ gem 'jquery-ui-rails', '~> 4.0.4'
 gem 'font-awesome-rails', '~> 3.2.1.3'
 gem 'mapbox-rails', '~> 1.0.3.1'
 gem 'zepto-rails', :github => 'frontfoot/zepto-rails'
+gem 'icheck-rails', '~> 0.9.0.2'
 
 
 group :development, :test do
