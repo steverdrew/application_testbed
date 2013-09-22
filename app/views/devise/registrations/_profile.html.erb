@@ -1,0 +1,20 @@
+<div class="panel">
+<div class="row">
+	<div class="large-2 columns">
+		<a href="#"><%= image_tag((current_user.image))%></a>
+	</div>
+	<div class="large-10 columns">
+		<a href="#" class="small secondary round button dropdown" data-dropdown="drop2"><%= current_user.name %></a>
+		<ul id="drop2" class="f-dropdown" style="triangle:false;" data-dropdown-content>
+		  <li><a href="#">Edit profile</a></li>
+		  <li><a href="#">Change password</a></li>
+		  <li><a href="#">Cancel account</a></li>
+		</ul>	
+	</div>
+</div>
+<div class="row">
+	<div class="large-12 columns">
+		<p class="subheader">Project Manager. Father. Holiday geek.</p>
+	</div>
+</div>
+</div>

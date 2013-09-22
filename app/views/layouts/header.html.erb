@@ -24,14 +24,14 @@
       <!-- Right Nav Section -->
       <ul class="right">
         <li class="divider"></li>
-		<li><%= link_to "search", '/search' %></li>
+		<li><%= link_to '<i class="icon-globe"></i> search'.html_safe, '/search'%></li>
         <% if user_signed_in? %>
 		<li class="divider"></li>
-        <li><a href="/messages">messages</a></li>
+        <li><a href="/messages"><i class="icon-envelope"></i> messages</a></li>
         <li class="divider"></li>
-        <li><a href="#">bookings</a></li>
+        <li><a href="/bookings"><i class="icon-ticket"></i> bookings</a></li>
         <li class="divider"></li>
-        <li><a href="#">friends</a></li>
+        <li><a href="#"><i class="icon-group"></i> friends</a></li>
         <li class="divider"></li>
        
 		<%# <li><img src= <%= current_user.image alt=height="20" width="20"></li> %>
@@ -39,7 +39,7 @@
 		<li class="hide-for-small has-dropdown">
 			<%= link_to(image_tag(current_user.image, :size => "30x30",  :alt => current_user.name), edit_user_registration_path) %>
 			 <ul class="dropdown">
-	 		<li><a href="#">owner tools</a></li>
+	 		<li><a href="#"><i class="icon-cog"></i> owner tools</a></li>
 			<li><%= link_to('logout', destroy_user_session_path, :method=>'delete') %></li>
 		</ul>
 		</li>
@@ -67,7 +67,7 @@
 
 <div class="row">
 	<div data-alert class="alert-box secondary">
-          You have 2 <a href="/messages">unread messages</a>
+          You have 2 <a href="/messages">unread messages</a> and 1 <a href="/bookings">booking request</a>
           <a href="" class="close">&times;</a>
     </div>
 </div>

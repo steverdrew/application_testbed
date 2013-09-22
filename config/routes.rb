@@ -1,4 +1,8 @@
 DeviseTest::Application.routes.draw do
+  resources :bookings
+
+  resources :friends
+
   resources :properties
   resources :messages
   resources :searches
@@ -6,6 +10,7 @@ DeviseTest::Application.routes.draw do
 
   get 'search', to: 'searches#index'
   get 'messages', to: 'messages#index'
+  get 'messages', to: 'bookings#index'
   get 'property', to: 'properties#show'
 
   
