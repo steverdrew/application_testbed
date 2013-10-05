@@ -18,7 +18,7 @@
 //= require responsive-tables
 //= require jquery.ui.datepicker
 //= require jquery.icheck
-
+//= require fullcalendar
 
 
 $(document).foundation();
@@ -65,4 +65,13 @@ $(document).ready(function(){
   };
 });
 
+$(document).ready(function() {
+
+    // page is now ready, initialize the calendar...
+
+    $('#calendar').fullCalendar({
+        // put your options and callbacks here
+    })
+
+});
 
