@@ -19,7 +19,7 @@
 //= require jquery.ui.datepicker
 //= require jquery.icheck
 //= require fullcalendar
-
+//= require jquery.countdown
 
 $(document).foundation();
 

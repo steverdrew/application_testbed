@@ -15,6 +15,7 @@ gem 'mapbox-rails', '~> 1.0.3.1'
 gem 'zepto-rails', :github => 'frontfoot/zepto-rails'
 gem 'fullcalendar-rails'
 
+
 group :development, :test do
   gem 'rspec', '~> 2.14.1'
   gem 'rspec-rails', '~> 2.14.0'
