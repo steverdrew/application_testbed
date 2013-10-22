@@ -16,8 +16,8 @@
       <!-- Left Nav Section --> 
       <ul class="left">
         <li class="divider"></li>
-        <% if !user_signed_in? %>
-		<li><a id="owner_link" class="button round" href="#" data-attr="top"> Owner Benefits</a></li>
+        <%# if !user_signed_in?
+			<li><a id="owner_link" class="button round" href="#" data-attr="top"> Owner Benefits</a></li>
         <% end %>
       </ul>
 	
@@ -55,7 +55,7 @@
 		<% else %>
  	
 		<li class="divider"></li>
-	    <li><%= link_to('sign up', new_user_registration_path, :class =>'button')  %></li>
+	    <li><%= link_to('sign up', new_user_registration_path, :class =>'button radius')  %></li>
   	  	<li class="divider"></li>
         <li><%= link_to('login', new_user_session_path)  %></li>
 		
@@ -64,12 +64,13 @@
     </section>
   </nav>
 </div>
-
+<% if user_signed_in? %>
 <div class="row">
 	<div data-alert class="alert-box secondary">
           You have 2 <a href="/messages">unread messages</a> and 1 <a href="/bookings">booking request</a>
           <a href="" class="close">&times;</a>
     </div>
 </div>
+<% end %>
   <!-- End Header and Nav -->
 

@@ -1,25 +1,39 @@
-<h1>Listing friends</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @friends.each do |friend| %>
-      <tr>
-        <td><%= link_to 'Show', friend %></td>
-        <td><%= link_to 'Edit', edit_friend_path(friend) %></td>
-        <td><%= link_to 'Destroy', friend, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Friend', new_friend_path %>
+<div class="row">
+	<div class="large-12 columns">	
+		<h1>Friends</h1>
+	</div>
+</div>
+<div class="row">
+	<div class="large-3 columns">	
+		<div class="row">
+			<div class="large-12 columns">	
+				<ul class="side-nav">
+			  		<li> <%= link_to '<i class="icon-facebook"></i> Find Facebook friends'.html_safe, new_friend_path %></li>
+			  		<li><%= link_to '<i class="icon-linkedin"></i> Find LinkedIn connections'.html_safe, new_friend_path %></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="large-9 columns panel">	
+		<div class="row">
+			<div class="large-1 columns">	
+				<%= link_to(image_tag(current_user.image,  :alt => current_user.name), edit_user_registration_path) %>
+			</div>
+			<div class="large-11 columns">	
+				<h6>Steve was last seen at <a href="#">Villa Casa</a> in January</h6>
+				<p class="subheader">Activity feed | Remove | View friends (20)</p>
+				<hr/>
+			</div>
+		</div>
+		<div class="row">
+			<div class="large-1 columns">	
+				<%= link_to(image_tag(current_user.image,  :alt => current_user.name), edit_user_registration_path) %>
+			</div>
+			<div class="large-11 columns">	
+				<h6>Jake was last seen at <a href="#">Villa Fantastica</a> in March</h6>
+				<p class="subheader">Activity feed | Remove | View friends (4)</p>
+				<hr/>
+			</div>
+		</div>
+	</div>
+</div>
